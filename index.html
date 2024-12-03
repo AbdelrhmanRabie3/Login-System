@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row my-5">
+          <div class="offset-md-2 col-md-8">
+            <div class="inner dark-shadow p-5">
+              <h1 class="text-center mb-3">Smart Login System</h1>
+              <form class="">
+                <input
+                  placeholder="Enter your name"
+                  class="form-control mb-3 d-none"
+                  type="text"
+                  name="userName"
+                  id="userName"
+                />
+                <p id="NameMsg" class="alert alert-danger d-none">
+                  Name must start with Capital letter and 4:20 letters
+                </p>
+                <input
+                  placeholder="Enter your email"
+                  class="form-control mb-3"
+                  type="email"
+                  name="userEmail"
+                  id="userEmail"
+                />
+                <p id="EmailMsg" class="alert alert-danger d-none">
+                  Enter Valid Email Example@gmail.com
+                </p>
+                <input
+                  placeholder="Enter password"
+                  class="form-control mb-3"
+                  type="password"
+                  name="userPassword"
+                  id="userPassword"
+                />
+                <p id="PassMsg" class="alert alert-danger d-none">
+                  password should be 8:20 letters , numbers and symbols
+                </p>
+              </form>
+              <p id="incorrect" class="text-danger text-center d-none">
+                incorrect email or password
+              </p>
+              <p id="AllRequired" class="text-danger text-center d-none">
+                All inputs is required
+              </p>
+              <p id="success" class="text-success text-center d-none">
+                success
+              </p>
+              <p id="exist" class="text-danger text-center d-none">
+                email already exists
+              </p>
+              <button class="w-100" id="Loginbtn">Login</button>
+              <button class="w-100 d-none" id="SignUPbtn">Sign Up</button>
+              <p id="NoAccount" class="text-center m-3 text-white">
+                Don’t have an account?
+                <a id="signup" class="text-white">Sign Up</a>
+              </p>
+              <p id="HaveAccount" class="text-center m-3 text-white d-none">
+                You have an account?
+                <a id="signIn" class="text-white">Sign in</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
